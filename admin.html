@@ -4,17 +4,25 @@
 <head>
     <meta charset='utf-8'>
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-    <title>Page Title</title>
+    <title>Quản lý - Admin</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <link rel="stylesheet" href="./css/style.css">
     <link rel="shortcut icon" href="image/logo.png">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
         integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+        integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="stylesheet" type="text/css" href="slick/slick.css" />
+    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css" />
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="slick/slick.min.js"></script>
 </head>
 
 <body>
-    <section>
+    <section class="admin_page">
         <nav>
             <div class="logo">
                 <h1>Shoe<span>s</span></h1>
@@ -32,7 +40,7 @@
                 <li><a href="#About">Quản lý sản phẩm</a></li>
                 <li><a href="#Home">Quản lý thành viên</a></li>
                 <li><a href="#Review">Quản lý đơn hàng</a></li>
-                <li><a href="#Servises">Hệ thống</a></li>
+                <li><a href="#Servises">Quản lý nhập/xuất kho</a></li>
             </ul>
 
             <div class="icons">
@@ -44,16 +52,78 @@
         </nav>
     </section>
     <div>
-        <table>
+        <h1 class="title_adminpage">Quản lý kho sản phẩm bán hàng</h1>
+    </div>
+    <div class="button">
+        <button>Thêm</button>
+        <button>Xóa</button>
+    </div>
+
+    <table class="cart_table" width="100%">
+        <thead>
             <tr>
-                <td>STT</td>
+                <td class="check_box"><input type="checkbox"></td>
                 <td>Tên sản phẩm</td>
                 <td>Loại sản phẩm</td>
                 <td>Số lượng tồn kho</td>
-                <td></td>
+                <td>Phiếu nhập kho</td>
+                <td>Phiếu xuất kho</td>
             </tr>
-        </table>
-    </div>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td class="check_box"><input type="checkbox"></td>
+                <td>Tên sản phẩm 1</td>
+                <td>Loại sản phẩm 1</td>
+                <td>Số lượng tồn kho 1</td>
+                <td>Phiếu nhập kho 1</td>
+                <td>Phiếu xuất kho 1</td>
+            </tr>
+            <tr>
+                <td class="check_box"><input type="checkbox"></td>
+                <td>Tên sản phẩm 1</td>
+                <td>Loại sản phẩm 1</td>
+                <td>Số lượng tồn kho 1</td>
+                <td>Phiếu nhập kho 1</td>
+                <td>Phiếu xuất kho 1</td>
+            </tr>
+            <tr>
+                <td class="check_box"><input type="checkbox"></td>
+                <td>Tên sản phẩm 1</td>
+                <td>Loại sản phẩm 1</td>
+                <td>Số lượng tồn kho 1</td>
+                <td>Phiếu nhập kho 1</td>
+                <td>Phiếu xuất kho 1</td>
+            </tr>
+            <tr>
+                <td class="check_box"><input type="checkbox"></td>
+                <td>Tên sản phẩm 1</td>
+                <td>Loại sản phẩm 1</td>
+                <td>Số lượng tồn kho 1</td>
+                <td>Phiếu nhập kho 1</td>
+                <td>Phiếu xuất kho 1</td>
+            </tr>
+            <tr>
+                <td class="check_box"><input type="checkbox"></td>
+                <td>Tên sản phẩm 1</td>
+                <td>Loại sản phẩm 1</td>
+                <td>Số lượng tồn kho 1</td>
+                <td>Phiếu nhập kho 1</td>
+                <td>Phiếu xuất kho 1</td>
+            </tr>
+            <tr>
+                <td class="check_box"><input type="checkbox"></td>
+                <td>Tên sản phẩm 1</td>
+                <td>Loại sản phẩm 1</td>
+                <td>Số lượng tồn kho 1</td>
+                <td>Phiếu nhập kho 1</td>
+                <td>Phiếu xuất kho 1</td>
+            </tr>
+            
+        </tbody>
+    </table>
+
 </body>
 
 </html>
