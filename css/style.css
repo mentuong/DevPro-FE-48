@@ -70,7 +70,7 @@ section nav ul li {
 section nav ul li a {
     text-decoration: none;
     color: black;
-    transition: 0.2s;
+    transition: 0s;
 }
 
 section nav ul li a:hover {
@@ -170,6 +170,53 @@ section .main .button:hover i {
     transform: translateX(6px);
 }
 
+.admin_page{
+    width: 100%;
+    height: 100px;
+    background-size: cover;
+    background-position: center;
+}
+
+table tr td{
+    box-sizing: border-box;
+    border: 1px solid #1c0080;
+    box-shadow: #919191;
+    padding: 5px 5px;
+    margin: 0 0;
+    width: 200px;
+    height: 80px;
+    text-align: center;
+}
+
+.thead td{
+    box-sizing: border-box;
+    box-shadow: #919191;
+    border: 2px solid #1c0080;
+    font-weight: bold;
+}
+
+.check_box{
+    width: 80px;
+}
+
+.title_adminpage {
+    font-family: prevattscriptssk;
+    font-size: 45px;
+    margin-bottom: 20px;
+}
+
+.button button{
+    width: 100px;
+    color: white;
+    padding: 7px 20px;
+    margin: 30px 0;
+    border: none;
+    border-radius: 5px;
+    font-size: 20px;
+    cursor: pointer;
+    background: linear-gradient(to right, #c72092, #6c14d0);
+}
+
 .sub_menu{
     position: relative;
 }
@@ -178,24 +225,23 @@ section .main .button:hover i {
     position: absolute;
     margin: 0 0;
     visibility: hidden;
+    width:200px;
+    background-color:white;
 }
 
 .sub_menu:hover .dropdown{
     position: absolute;
+    margin: 0 0;
     visibility: visible;
     width:200px;
     background-color:white;
-    /* opacity: 0; */
 }
 
 .dropdown li{
-    margin: 15px 0;
-    padding-left: 5px;
+    margin: 15px 0 0;
+    padding-left: 15px;
     width:200px;
     background-color:white;
-    box-sizing: border-box;
-    /* border: 1px solid #f6f6f6; */
-    /* opacity: 1; */
 }
 
 
